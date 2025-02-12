@@ -10,11 +10,10 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import API from "@/api";
 
-// You should store this in an environment variable
+
 const PAYSTACK_SECRET_KEY = process.env.NEXT_PUBLIC_PAYSTACK_SECRET_KEY;
 const PAYSTACK_BASE_URL = process.env.NEXT_PUBLIC_PAYSTACK_BASE_URL;
-const data = process.env.NEXT_PUBLIC_API_URL
-console.log(data);
+
 
 
 const WithdrawalForm = () => {

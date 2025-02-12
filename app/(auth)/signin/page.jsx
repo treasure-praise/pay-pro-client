@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import Link from "next/link"
 import { useMutation } from "@tanstack/react-query"
-import axios from "axios"
+import API from "@/api"
 
 export default function SignIn() {
   const [email, setEmail] = useState("")
@@ -18,7 +18,7 @@ export default function SignIn() {
 
   // API call function
   const loginUser = async (userData) => {
-    const response = await axios.post("http://localhost:5002/api/login", userData)
+    const response = await API.post("/login", userData)
     return response.data
   }
 
