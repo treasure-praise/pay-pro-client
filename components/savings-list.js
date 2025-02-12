@@ -104,7 +104,9 @@ const SavingsList = ({ setTotalSavings }) => {
                         <DollarSign className="h-5 w-5 text-purple-600" />
                       </div>
                       <div className="text-left">
-                        <div className="font-semibold">{savings.name}</div>
+                        <div className="font-semibold">{
+                           savings.name> 30 ? `${savings.name.substring(0, 18)}...`:
+                        savings.name}</div>
                         <div className="text-xs text-gray-500">
                           {savings.type} SAVINGS
                         </div>
