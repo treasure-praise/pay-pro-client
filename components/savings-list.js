@@ -105,7 +105,7 @@ const SavingsList = ({ setTotalSavings }) => {
                       </div>
                       <div className="text-left">
                         <div className="font-semibold">{
-                           savings.name> 30 ? `${savings.name.substring(0, 18)}...`:
+                           savings.name> 20 ? `${savings.name.substring(0, 18)}...`:
                         savings.name}</div>
                         <div className="text-xs text-gray-500">
                           {savings.type} SAVINGS
